@@ -14,7 +14,6 @@
 
         <form method="post" action="{{ route('processTransaction') }}" class="bg-white p-6 rounded-lg shadow-md">
             @csrf
-            <!-- Pecahan Awal -->
             <div class="mb-4">
                 <label for="pecahanAwal" class="text-lg font-semibold">Pecahan Awal:</label>
                 <table class="w-full mt-2">
@@ -22,7 +21,6 @@
                         <th class="py-2 px-4">Nominal</th>
                         <th class="py-2 px-4">Jumlah</th>
                     </tr>
-                    <!-- Isi tabel dengan data pecahan awal -->
                     <tr>
                         <td>2000</td>
                         <td><input type="number" name="pecahanAwal[2000]" value="7" min="0"></td>
@@ -54,7 +52,6 @@
                 </table>
             </div>
 
-            <!-- Total Biaya -->
             <div class="mb-4">
                 <label for="totalBiaya" class="text-lg font-semibold">Total Biaya:</label>
                 <input type="number" id="totalBiaya" name="totalBiaya" required class="w-full px-4 py-2 rounded-md border border-gray-300">
@@ -68,7 +65,6 @@
                         <th class="py-2 px-4">Nominal</th>
                         <th class="py-2 px-4">Jumlah</th>
                     </tr>
-                    <!-- Isi tabel dengan data pecahan dibayarkan -->
                     <tr>
                         <td>2000</td>
                         <td><input type="number" name="pecahanDibayarkan[2000]" value="0" min="0"></td>
